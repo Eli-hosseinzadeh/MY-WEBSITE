@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Films | Your Name</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    main {
+      padding: 20px;
+    }
+
+    .videos-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .video-frame {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .video-frame iframe {
+      width: 220px;
+      height: 124px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .video-frame p {
+      font-size: 0.9rem;
+      margin-top: 8px;
+      color: #444;
+    }
+
+    @media (min-width: 1100px) {
+      .videos-container {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="films.html">Films</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h1>Films</h1>
+    <div class="videos-container">
+
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/fN5acGhngXY" frameborder="0" allowfullscreen></iframe>
+        <p><strong>Light & Shadow</strong> – An abstract video exploring contrasts between light and motion.</p>
+      </div>
+
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/frgwasFXc20" frameborder="0" allowfullscreen></iframe>
+        <p><strong>Inner Pulse</strong> – A poetic reflection on rhythm, silence, and emotion.</p>
+      </div>
+
+      <!-- اینجا می‌تونی ویدیوهای بعدی رو اضافه کنی -->
+      <!-- فقط کافیه div با class="video-frame" رو کپی کنی -->
+
+    </div>
+  </main>
+
+  <footer>© 2025 Elham Hosseinzadeh</footer>
+</body>
+</html>
+
