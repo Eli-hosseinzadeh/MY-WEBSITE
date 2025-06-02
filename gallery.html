@@ -5,12 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Gallery | Elham Hosseinzadeh</title>
+  
+  <meta name="description" content="Explore the gallery of Elham Hosseinzadeh, featuring original paintings created with processing code, 2025." />
+  
+  <link rel="canonical" href="https://eli-hosseinzadeh.github.io/MY-WEBSITE/gallery.html" />
+  
   <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      padding: 20px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 15px;
+      justify-items: center;
+    }
+
+    .gallery-item {
+      text-align: center;
+    }
+
+    .gallery-item img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.05);
+    }
+
+    .caption {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      color: #555;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    @media (min-width: 1100px) {
+      .gallery-grid {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+  </style>
+  
+  <!-- Optional: Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet" />
+  
 </head>
 <body>
   <nav>
     <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
+    <a href="gallery.html" aria-current="page">Gallery</a>
     <a href="films.html">Films</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
@@ -20,43 +70,43 @@
     <h1>Gallery</h1>
     <div class="gallery-grid">
       <div class="gallery-item">
-        <img src="images/painting1.png" alt="Painting 1" />
+        <img src="images/painting1.png" alt="Abstract painting with vibrant colors" />
         <p class="caption">processing code 2025</p>
       </div>
       <div class="gallery-item">
-        <img src="images/painting2.png" alt="Painting 2" />
+        <img src="images/painting2.png" alt="Abstract painting with geometric shapes" />
         <p class="caption">processing code 2025</p>
       </div>
       <div class="gallery-item">
-        <img src="images/painting3.png" alt="Painting 3" />
+        <img src="images/painting3.png" alt="Abstract painting with soft textures" />
         <p class="caption">processing code 2025</p>
       </div>
       <div class="gallery-item">
-        <img src="images/painting4.png" alt="Painting 4" />
+        <img src="images/painting4.png" alt="Colorful abstract painting with patterns" />
         <p class="caption">processing code 2025</p>
       </div>
       <div class="gallery-item">
-        <img src="images/painting5.png" alt="Painting 5" />
+        <img src="images/painting5.png" alt="Dynamic abstract painting with bold strokes" />
         <p class="caption">processing code 2025</p>
       </div>
       <div class="gallery-item">
-        <img src="images/painting6.png" alt="Painting 6" />
+        <img src="images/painting6.png" alt="Abstract painting with digital art style" />
         <p class="caption">processing code 2025</p>
       </div>
       <div class="gallery-item">
-        <img src="images/painting7.png" alt="Painting 7" />
+        <img src="images/painting7.png" alt="Abstract painting with fluid shapes" />
         <p class="caption">processing code 2025</p>
       </div>
       <div class="gallery-item">
-        <img src="images/painting8 (2).png" alt="Painting 8" />
+        <img src="images/painting8 (2).png" alt="Abstract painting with cool tones" />
         <p class="caption">processing code 2025</p>
       </div>
       <div class="gallery-item">
-        <img src="images/painting8 (1).png" alt="Painting 9" />
+        <img src="images/painting8 (1).png" alt="Abstract painting with warm hues" />
         <p class="caption">processing code 2025</p>
       </div>
       <div class="gallery-item">
-        <img src="images/painting10.png" alt="Painting 10" />
+        <img src="images/painting10.png" alt="Abstract painting with complex design" />
         <p class="caption">processing code 2025</p>
       </div>
     </div>
