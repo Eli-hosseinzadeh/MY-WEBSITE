@@ -1,32 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Home | Elham Hosseinzadeh</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Home | Elham Hosseinzadeh - Code Artist</title>
+  
+  <meta name="description" content="Welcome to Elham Hosseinzadeh's personal website. Explore artworks and creative code projects by Elham, a talented code artist." />
+  <meta name="keywords" content="Elham Hosseinzadeh, Code Artist, Digital Art, Creative Coding, Art Portfolio" />
+  <meta name="author" content="Elham Hosseinzadeh" />
+  
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet" />
+  
+  <style>
+    main {
+      padding: 40px 20px;
+      text-align: center;
+      font-family: 'Cormorant Garamond', serif;
+      color: #333;
+    }
 
+    .welcome-section h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .welcome-section p {
+      font-size: 1.4rem;
+      margin-bottom: 30px;
+      color: #666;
+    }
+
+    .photo-wrapper {
+      display: inline-block;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      width: 180px;
+      height: 180px;
+      margin: 0 auto;
+    }
+
+    .profile-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @media (min-width: 768px) {
+      main {
+        padding: 60px 40px;
+      }
+
+      .welcome-section h1 {
+        font-size: 4rem;
+      }
+
+      .welcome-section p {
+        font-size: 1.6rem;
+      }
+
+      .photo-wrapper {
+        width: 220px;
+        height: 220px;
+      }
+    }
+  </style>
 </head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <body>
   <nav>
-    <a href="index.html">Home</a>
+    <a href="index.html" aria-current="page">Home</a>
     <a href="gallery.html">Gallery</a>
     <a href="films.html">Films</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <main>
-    <div class="welcome-section">
-  <h1>Elham Hosseinzadeh</h1>
-  <p>Code Artist</p>
-  <div class="photo-wrapper">
-    <img src="images/elham.png" alt="Elham Hosseinzadeh" class="profile-photo">
-  </div>
-</div>
 
+  <main>
+    <section class="welcome-section" aria-label="Introduction to Elham Hosseinzadeh">
+      <h1>Elham Hosseinzadeh</h1>
+      <p>Code Artist</p>
+      <div class="photo-wrapper">
+        <img src="images/elham.png" alt="Portrait of Elham Hosseinzadeh" class="profile-photo" />
+      </div>
+    </section>
   </main>
-  <footer>© 2025 Elham Hosseinzadeh</footer>
+
+  <footer>
+    <p>© 2025 Elham Hosseinzadeh</p>
+  </footer>
 </body>
 </html>
