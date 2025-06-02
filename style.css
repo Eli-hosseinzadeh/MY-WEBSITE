@@ -6,6 +6,7 @@ body {
   background: #000;
   color: #f0f0f0;
   line-height: 1.6;
+  font-size: 16px; /* پایه فونت */
 }
 
 nav {
@@ -13,7 +14,9 @@ nav {
   color: #fff;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 1em;
+  text-align: center;
 }
 
 nav a {
@@ -62,10 +65,13 @@ h1, h2 {
   position: relative;
 }
 
-.gallery-item img:hover {
-  transform: scale(2.5);
-  z-index: 10;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+/* انیمیشن hover فقط برای صفحه‌های بزرگ‌تر از 600 پیکسل */
+@media (min-width: 601px) {
+  .gallery-item img:hover {
+    transform: scale(2.5);
+    z-index: 10;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  }
 }
 
 .caption {
@@ -172,7 +178,13 @@ footer:hover {
   padding: 2em;
   text-align: justify;
 }
+
+/* بخش ریسپانسیو برای موبایل */
 @media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+
   nav {
     flex-direction: column;
     padding: 1em 0.5em;
@@ -194,8 +206,9 @@ footer:hover {
     padding: 0.5em;
   }
 
+  /* برای موبایل، مقیاس بزرگ شدن کمتر و سایه کمتر */
   .gallery-item img:hover {
-    transform: scale(1.5); /* کمتر بزرگ شود تا موبایل اذیت نشود */
+    transform: scale(1.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
   }
 
@@ -239,4 +252,3 @@ footer:hover {
     padding: 1em;
   }
 }
-
