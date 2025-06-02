@@ -6,7 +6,7 @@ body {
   background: #000;
   color: #f0f0f0;
   line-height: 1.6;
-  font-size: 16px; /* پایه فونت */
+  font-size: 16px;
 }
 
 nav {
@@ -44,14 +44,14 @@ h1, h2 {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5em;
+  gap: 2em; /* افزایش فاصله برای فضای بیشتر هنگام بزرگ‌نمایی */
   padding: 1em;
 }
 
 .gallery-item {
   text-align: center;
-  overflow: visible;
-  position: relative;
+  overflow: visible; /* اجازه بده عکس‌ها از محدوده بیرون بزنن */
+  position: relative; /* برای کنترل درست z-index */
 }
 
 .gallery-item img {
@@ -69,8 +69,13 @@ h1, h2 {
 @media (min-width: 601px) {
   .gallery-item img:hover {
     transform: scale(2.5);
-    z-index: 10;
+    z-index: 20;
+    position: relative;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  }
+
+  .gallery-item:hover {
+    z-index: 30;
   }
 }
 
@@ -179,7 +184,7 @@ footer:hover {
   text-align: justify;
 }
 
-/* بخش ریسپانسیو برای موبایل */
+/* ریسپانسیو برای موبایل */
 @media (max-width: 600px) {
   body {
     font-size: 15px;
@@ -206,9 +211,10 @@ footer:hover {
     padding: 0.5em;
   }
 
-  /* برای موبایل، مقیاس بزرگ شدن کمتر و سایه کمتر */
   .gallery-item img:hover {
     transform: scale(1.5);
+    z-index: 20;
+    position: relative;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
   }
 
